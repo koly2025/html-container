@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Container</title>
+    <style>
+        /* Basic container style */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightyellow;
+        }
+
+        /* For large screens */
+        @media screen and (min-width: 1024px) {
+            .container {
+                width: 80%;
+            }
+        }
+
+        /* For medium screens */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        /* For small screens */
+        @media screen and (max-width: 767px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Responsive Container</h2>
+        <p>This container adjusts its width based on the screen size. On large screens, it occupies 80% width, on medium screens 90%, and on small screens 95%.</p>
+    </div>
+
+</body>
+</html>
